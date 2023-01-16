@@ -14,7 +14,10 @@ exports.createArtist = async (req, res) => {
     const {
       rows: [artist],
     } = await db.query(
-      `INSERT INTO artists (name, genre) VALUES ('${name}', '${genre}') RETURNING *`
+      `INSERT INTO artists (name, genre) VALUES ($1,$2) RETURNING *`,
+      [name, genre]
+      // to prevent SQL injection :
+      // `INSERT INTO artists (name, genre) VALUES ('${name}', '${genre}') RETURNING *`
     );
     res.status(201).json(artist);
   } catch (err) {
