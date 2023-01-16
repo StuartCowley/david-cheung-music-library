@@ -1,0 +1,54 @@
+// tests/artist-create.test.js
+const { expect } = require('chai');
+
+const request = require('supertest');
+
+// +1 add for create table test
+const db = require('../src/db');
+
+const app = require('../src/app');
+const { json } = require('express');
+
+describe('create artist', () => {
+  describe('/artists', () => {
+    describe('POST', () => {
+      xit('creates a new artist in the database', async () => {
+        // const res = await request(app).post('/artists').send({
+        //   name: 'Tame Impala',
+        //   genre: 'rock',
+        // });
+        const { status, body } = await request(app).post('/artists').send({
+          name: 'Tame Impala',
+          genre: 'rock',
+        });
+        expect(status).to.equal(201);
+        expect(body.name).to.equal('Tame Impala');
+        expect(body.genre).to.equal('rock');
+
+        // const sql = ' SELECT current_database();';
+        // const sql = ' SELECT name from david;';
+        // const sql = `delete from david where name = 'firstName';`;
+        // const sql = `insert into david(name,genre) values ('secondName','secondGenre')`;
+        // const {
+        //   rows: [artistData],
+        // } = await db.query(sql);
+        // console.log('>>>>>>>', artistData, '<<<<<<<<<<<');
+
+        const insertValue = `1,'${body.name}','${body.genre}'`;
+        const sql = `insert into artists (id,name,genre) values (${insertValue})`;
+        const {
+          rows: [result],
+        } = await db.query(sql);
+
+        const {
+          rows: [artistData],
+        } = await db.query(`SELECT * FROM artists;`);
+        // const {
+        //   rows: [artistData],
+        // } = await db.query(`SELECT * FROM artists WHERE id = ${body.id}`);
+        expect(artistData.name).to.equal('Tame Impala');
+        expect(artistData.genre).to.equal('rock');
+      });
+    });
+  });
+});

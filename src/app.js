@@ -9,5 +9,4 @@ app.use(express.json());
 
 const artistRouter = require('../src/routes/artist');
 app.use(artistRouter);
-
 module.exports = app;
