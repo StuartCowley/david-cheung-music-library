@@ -6,6 +6,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(200).json({ result: 'hello world!' });
 });
+
+// $$$ my testing $$$
 // app.get('/hello', (req, res) => {
 //   res.json({ result: 'hello' });
 // });
