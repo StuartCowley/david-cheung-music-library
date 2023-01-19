@@ -55,7 +55,7 @@ describe('Patch Artist', () => {
         genre: 'rock',
       });
     });
-    it('update any one key of artist and returns the updated record', async () => {
+    it('updates any one key of artist and returns the updated record', async () => {
       const { status, body } = await request(app)
         .patch(`/artists/${artist.id}`)
         .send({ genre: 'rock', name: 'something different' });

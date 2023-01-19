@@ -1,12 +1,6 @@
 const express = require('express');
 const router = express.Router();
-// const { artistController} = require('../controllers/artist');
-const { createArtist } = require('../controllers/artist');
-const { readArtist } = require('../controllers/artist');
-const { readSingleArtist } = require('../controllers/artist');
-const { updateArtist } = require('../controllers/artist');
-const { patchArtist } = require('../controllers/artist');
-const { deleteArtist } = require('../controllers/artist');
+const controllers = require('../controllers/artist');
 
 // $$$ my solution $$$
 // router.post('/artists', (req, res) => {
@@ -15,11 +9,11 @@ const { deleteArtist } = require('../controllers/artist');
 // router.post('/artists', artistController);
 // module.exports = router;
 
-router.post('/artists', createArtist);
-router.get('/artists', readArtist);
-router.get('/artists/:id', readSingleArtist);
-router.put('/artists/:id', updateArtist);
-router.patch('/artists/:id', patchArtist);
-router.delete('/artists/:id', deleteArtist);
+router.post('/artists', controllers.createArtist);
+router.get('/artists', controllers.readArtist);
+router.get('/artists/:id', controllers.readSingleArtist);
+router.put('/artists/:id', controllers.updateArtist);
+router.patch('/artists/:id', controllers.patchArtist);
+router.delete('/artists/:id', controllers.deleteArtist);
 
 module.exports = router;

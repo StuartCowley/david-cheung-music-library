@@ -18,4 +18,7 @@ app.get('/', (req, res) => {
 const artistRouter = require('../src/routes/artist');
 app.use(artistRouter);
 
+const albumRouter = require('../src/routes/album');
+app.use(albumRouter);
+
 module.exports = app;
