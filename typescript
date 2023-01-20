@@ -1,0 +1,1449 @@
+Script started on Sat Jan 14 10:52:15 2023
+]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+index.js          [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts]2;taiwaicheung@TAIs-MacBook-Air]1;..brary/scripts]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lscreate-database.js drop-database.js   insertArtist.js    migrate.js
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts]2;taiwaicheung@TAIs-MacBook-Air]1;..brary/scripts]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hllxl ls l  ccat [7msrc/db/index.js[27m[15D[27ms[27mr[27mc[27m/[27md[27mb[27m/[27mi[27mn[27md[27me[27mx[27m.[27mj[27ms[?1l>[?2004l
+]2;cat src/db/index.js]1;catcat: src/db/index.js: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts]2;taiwaicheung@TAIs-MacBook-Air]1;..brary/scripts]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hcat src/db/index.js.src/db/index.js[15D.src/db/index.js[15D/src/db/index.js[15D[?1l>[?2004l
+]2;cat ../src/db/index.js]1;catconst { Pool } = require('pg');
+
+const pool = new Pool();
+
+module.exports = {
+  query: (text, params) => pool.query(text, params),
+};
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts]2;taiwaicheung@TAIs-MacBook-Air]1;..brary/scripts]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hcat ../src/db/index.js[18D[3P[15C                   c  ccs..  c  ...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls [7m./src/db/index.js[27m[17D[27m.[27m/[27ms[27mr[27mc[27m/[27md[27mb[27m/[27mi[27mn[27md[27me[27mx[27m.[27mj[27ms[?1l>[?2004l
+]2;ls -G ./src/db/index.js]1;ls./src/db/index.js
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccat [7m./src/db/index.js[27m[17D[27m.[27m/[27ms[27mr[27mc[27m/[27md[27mb[27m/[27mi[27mn[27md[27me[27mx[27m.[27mj[27ms[?1l>[?2004l
+]2;cat ./src/db/index.js]1;catconst { Pool } = require('pg');
+
+const pool = new Pool();
+
+module.exports = {
+  query: (text, params) => pool.query(text, params),
+};
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mnode scripts/insertArtist.js[27m[28D[27mn[27mo[27md[27me[27m [27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27mi[27mn[27ms[27me[27mr[27mt[27mA[27mr[27mt[27mi[27ms[27mt[27m.[27mj[27ms[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:4
+const db = require('./src/db/index.js);
+                   ^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:4
+const {query} = require('./src/db/index.js);
+                        ^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const {query} = require('index.js);
+                        ^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const {query} = require('scripts/index.js);
+                        ^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node[36m<ref *2>[39m {
+  resolve: [36m[Function: resolve][39m,
+  normalize: [36m[Function: normalize][39m,
+  isAbsolute: [36m[Function: isAbsolute][39m,
+  join: [36m[Function: join][39m,
+  relative: [36m[Function: relative][39m,
+  toNamespacedPath: [36m[Function: toNamespacedPath][39m,
+  dirname: [36m[Function: dirname][39m,
+  basename: [36m[Function: basename][39m,
+  extname: [36m[Function: extname][39m,
+  format: [36m[Function: bound _format][39m,
+  parse: [36m[Function: parse][39m,
+  sep: [32m'/'[39m,
+  delimiter: [32m':'[39m,
+  win32: [36m<ref *1>[39m {
+    resolve: [36m[Function: resolve][39m,
+    normalize: [36m[Function: normalize][39m,
+    isAbsolute: [36m[Function: isAbsolute][39m,
+    join: [36m[Function: join][39m,
+    relative: [36m[Function: relative][39m,
+    toNamespacedPath: [36m[Function: toNamespacedPath][39m,
+    dirname: [36m[Function: dirname][39m,
+    basename: [36m[Function: basename][39m,
+    extname: [36m[Function: extname][39m,
+    format: [36m[Function: bound _format][39m,
+    parse: [36m[Function: parse][39m,
+    sep: [32m'\\'[39m,
+    delimiter: [32m';'[39m,
+    win32: [36m[Circular *1][39m,
+    posix: [36m[Circular *2][39m,
+    _makeLong: [36m[Function: toNamespacedPath][39m
+  },
+  posix: [36m[Circular *2][39m,
+  _makeLong: [36m[Function: toNamespacedPath][39m
+}
+Insert Artist table...
+/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:54
+  const output = await db.query(config, SQL);
+                 ^
+
+ReferenceError: db is not defined
+    at insertDB [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:54:18[90m)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:64:3[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const db = require('../src/db/index.js);
+                   ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:6
+const db = require('../src/db/index.js);
+                   ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const db = require('../src/db/index.js);
+                   ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const db = require('../src/db/index);
+                   ^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const query = require('../src/db/index);
+                      ^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:5
+const query = require('index);
+                      ^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module 'index'
+Require stack:
+- /Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:5:15[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js'[39m
+  ]
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module 'index'
+Require stack:
+- /Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:5:15[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js'[39m
+  ]
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccat src/db/index.js[?1l>[?2004l
+]2;cat src/db/index.js]1;catconst { Pool } = require('pg');
+
+const pool = new Pool();
+
+// module.exports = {
+//   query: (text, params) => pool.query(text, params),
+// };
+
+function query (text, params) {
+  return pool.query(text, params),
+};
+
+module.exports = query;[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccp src/db/index.js index.js[?1l>[?2004l
+]2;cp src/db/index.js index.js]1;cp[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+index.js          [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm test   est strings.test.js[15D               [16D __tests__[9D         [10D __tests__[9D         [10D --       n  [7mnode scripts/insertArtist.js[27m[28D[27mn[27mo[27md[27me[27m [27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27mi[27mn[27ms[27me[27mr[27mt[27mA[27mr[27mt[27mi[27ms[27mt[27m.[27mj[27ms[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module 'index'
+Require stack:
+- /Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:5:15[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js'[39m
+  ]
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+index.js          [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrm index.js[?1l>[?2004l
+]2;rm index.js]1;rm[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlsrm index.js[11Dls         [9Dnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/src/db/index.js:11
+};
+^
+
+SyntaxError: Unexpected token '}'
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:5:15[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/node_modules/pg/lib/query.js:152
+      return new Error('A query must have either text or a name. Supplying neither is unsupported.')
+             ^
+
+Error: A query must have either text or a name. Supplying neither is unsupported.
+    at Query.submit [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/query.js:152:14[90m)[39m
+    at Client._pulseQueryQueue [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/client.js:484:45[90m)[39m
+    at Client._handleReadyForQuery [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/client.js:292:10[90m)[39m
+[90m    at Connection.emit (node:events:513:28)[39m
+    at [90m/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/connection.js:114:12
+    at Parser.parse [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/parser.js:40:17[90m)[39m
+    at Socket.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/index.js:11:42[90m)[39m
+[90m    at Socket.emit (node:events:513:28)[39m
+[90m    at addChunk (node:internal/streams/readable:324:12)[39m
+[90m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:55
+  const output = await db.query(config, SQL);
+                          ^
+
+TypeError: db.query is not a function
+    at insertDB [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:55:27[90m)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:65:3[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/node_modules/pg/lib/query.js:152
+      return new Error('A query must have either text or a name. Supplying neither is unsupported.')
+             ^
+
+Error: A query must have either text or a name. Supplying neither is unsupported.
+    at Query.submit [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/query.js:152:14[90m)[39m
+    at Client._pulseQueryQueue [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/client.js:484:45[90m)[39m
+    at Client._handleReadyForQuery [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/client.js:292:10[90m)[39m
+[90m    at Connection.emit (node:events:513:28)[39m
+    at [90m/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg[24m/lib/connection.js:114:12
+    at Parser.parse [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/parser.js:40:17[90m)[39m
+    at Socket.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/index.js:11:42[90m)[39m
+[90m    at Socket.emit (node:events:513:28)[39m
+[90m    at addChunk (node:internal/streams/readable:324:12)[39m
+[90m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:53
+  const output = await query(config, SQL);
+                       ^
+
+TypeError: query is not a function
+    at insertDB [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:53:24[90m)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:63:3[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:53
+  const output = await query(config, SQL);
+                       ^
+
+TypeError: query is not a function
+    at insertDB [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:53:24[90m)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:63:3[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:4
+const {query} = require('../src/db/index);
+                        ^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:52
+  const query = (text:'insert artists (name,genre) values ("Tame Impala","rock")',params:
+                     ^
+
+SyntaxError: Unexpected token ':'
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:52
+  const query = (text:'insert artists (name,genre) values ("Tame Impala","rock")',params:
+                     ^
+
+SyntaxError: Unexpected token ':'
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/src/db/index.js:9
+const query = (text, params) {
+                             ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m
+    at Object.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mscripts/insertArtist.js:4:15[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1159:14)[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+Insert Artist occurs error!
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+Result {
+  command: [32m'SELECT'[39m,
+  rowCount: [33m0[39m,
+  oid: [1mnull[22m,
+  rows: [],
+  fields: [
+    Field {
+      name: [32m'id'[39m,
+      tableID: [33m16416[39m,
+      columnID: [33m1[39m,
+      dataTypeID: [33m23[39m,
+      dataTypeSize: [33m4[39m,
+      dataTypeModifier: [33m-1[39m,
+      format: [32m'text'[39m
+    },
+    Field {
+      name: [32m'name'[39m,
+      tableID: [33m16416[39m,
+      columnID: [33m2[39m,
+      dataTypeID: [33m1043[39m,
+      dataTypeSize: [33m-1[39m,
+      dataTypeModifier: [33m259[39m,
+      format: [32m'text'[39m
+    },
+    Field {
+      name: [32m'genre'[39m,
+      tableID: [33m16416[39m,
+      columnID: [33m3[39m,
+      dataTypeID: [33m1043[39m,
+      dataTypeSize: [33m-1[39m,
+      dataTypeModifier: [33m259[39m,
+      format: [32m'text'[39m
+    }
+  ],
+  _parsers: [
+    [36m[Function: parseInteger][39m,
+    [36m[Function: noParse][39m,
+    [36m[Function: noParse][39m
+  ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [36m[Function: getTypeParser][39m,
+      setTypeParser: [36m[Function: setTypeParser][39m,
+      arrayParser: [36m[Object][39m,
+      builtins: [36m[Object][39m
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: [1mnull[22m,
+  rowAsArray: [33mfalse[39m
+}
+Insert Artist occurs error!
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+/Users/taiwaicheung/Projects/music-library/node_modules/pg-protocol/dist/parser.js:287
+        const message = name === 'notice' ? new messages_1.NoticeMessage(length, messageValue) : new messages_1.DatabaseError(messageValue, length, name);
+                                                                                                 ^
+
+error: syntax error at or near "artists"
+    at Parser.parseErrorMessage [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/parser.js:287:98[90m)[39m
+    at Parser.handlePacket [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/parser.js:126:29[90m)[39m
+    at Parser.parse [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/parser.js:39:38[90m)[39m
+    at Socket.<anonymous> [90m(/Users/taiwaicheung/Projects/music-library/[39mnode_modules/[4mpg-protocol[24m/dist/index.js:11:42[90m)[39m
+[90m    at Socket.emit (node:events:513:28)[39m
+[90m    at addChunk (node:internal/streams/readable:324:12)[39m
+[90m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[90m    at Readable.push (node:internal/streams/readable:234:10)[39m
+[90m    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)[39m {
+  length: [33m95[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42601'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'8'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'scan.l'[39m,
+  line: [32m'1188'[39m,
+  routine: [32m'scanner_yyerror'[39m
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;nodeInsert Artist table...
+Result {
+  command: [32m'SELECT'[39m,
+  rowCount: [33m1[39m,
+  oid: [1mnull[22m,
+  rows: [ { count: [32m'0'[39m } ],
+  fields: [
+    Field {
+      name: [32m'count'[39m,
+      tableID: [33m0[39m,
+      columnID: [33m0[39m,
+      dataTypeID: [33m20[39m,
+      dataTypeSize: [33m8[39m,
+      dataTypeModifier: [33m-1[39m,
+      format: [32m'text'[39m
+    }
+  ],
+  _parsers: [ [36m[Function: parseBigInteger][39m ],
+  _types: TypeOverrides {
+    _types: {
+      getTypeParser: [36m[Function: getTypeParser][39m,
+      setTypeParser: [36m[Function: setTypeParser][39m,
+      arrayParser: [36m[Object][39m,
+      builtins: [36m[Object][39m
+    },
+    text: {},
+    binary: {}
+  },
+  RowCtor: [1mnull[22m,
+  rowAsArray: [33mfalse[39m
+}
+Insert Artist occurs error!
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode scripts/insertArtist.js[?1l>[?2004l
+]2;node scripts/insertArtist.js]1;node/Users/taiwaicheung/Projects/music-library/scripts/insertArtist.js:16
+} = await db.query('SELECT * FROM Artists');
+    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+[90m    at Object.compileFunction (node:vm:360:18)[39m
+[90m    at wrapSafe (node:internal/modules/cjs/loader:1088:15)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1123:27)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode[?1l>[?2004l
+]2;node]1;nodeWelcome to Node.js v18.12.0.
+Type ".help" for more information.
+[1G[0J> [3Gconst { expect } = require('chai');
+[90mundefined[39m
+[1G[0J> [3G const request = require('supertest');
+[90mundefined[39m
+[1G[0J> [3G const db = require('../src/db');
+Uncaught Error: Cannot find module '../src/db'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3G const app = require('../src/app');
+Uncaught Error: Cannot find module '../src/app'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0J> [3G
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode [7mscripts/migrate.js[27m[18D[27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27mm[27mi[27mg[27mr[27ma[27mt[27me[27m.[27mj[27ms[?1l>[?2004l
+]2;node scripts/migrate.js]1;nodeMigrating Database...
+Database already up to date!
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode[?1l>[?2004l
+]2;node]1;nodeWelcome to Node.js v18.12.0.
+Type ".help" for more information.
+[1G[0J> [3Gconst db = require('../src/db');
+Uncaught Error: Cannot find module '../src/db'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3Gconst q[90mue[39m[10G[0Ku[90me[39m[11G[0Ker[90mystring[39m[13G[0Ky[90mstring[39m[14G[0K = requi[90mre[39m[22G[0Kr[90me[39m[23G[0Ke([1G[0J> const query = require[24G[1G[0J> const query = requir[23G[90me[39m[23G[90me[39m[23G[0K[1G[0J> const query = requi[22G[90mre[39m[22G[90mre[39m[22G[0K[1G[0J> const query = requ[21G[1G[0J> const query = req[20G[1G[0J> const query = re[19G[1G[0J> const query = r[18G[1G[0J> const query = [17G[1G[0J> const query =[16G[1G[0J> const query [15G[1G[0J> const query[14G[90mstring[39m[14G[90mstring[39m[14G[0K[1G[0J> const quer[13G[90mystring[39m[13G[90mystring[39m[13G[0K[1G[0J> const que[12G[1G[0J> const qu[11G[90me[39m[11G[90me[39m[11G[0K[1G[0J> const q[10G[90mue[39m[10G[90mue[39m[10G[0K[1G[0J> const [9G{q[90mue[39m[11G[0Ku[90me[39m[12G[0Ker[90mystring[39m[14G[0Ky[90mstring[39m[15G[0K} = requi[90mre[39m[24G[0Kr[90me[39m[25G[0Ke('../src/db/index');
+Uncaught Error: Cannot find module '../src/db/index'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3Gconst q[90mue[39m[10G[0Ku[90me[39m[11G[0Ker[90my[39m[13G[0Ky ==[1G[0J> const query =[16G requi[90mre[39m[22G[0Kr[90me[39m[23G[0Ke('../src/db/ine[1G[0J> const query = require('../src/db/in[38Gdex');
+Uncaught SyntaxError: Identifier 'query' has already been declared
+[1G[0J> [3Gex[90mport[39m[5G[0Kit
+Uncaught ReferenceError: exit is not defined
+[1G[0J> [3G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0J> [3G
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode[?1l>[?2004l
+]2;node]1;nodeWelcome to Node.js v18.12.0.
+Type ".help" for more information.
+[1G[0J> [3G[1G[0J> exit[7G[1G[0J> const query = require('../src/db/index');[44G
+Uncaught Error: Cannot find module '../src/db/index'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3Gconst q[90mue[39m[10G[0Ku[90me[39m[11G[0Ker[90my[39m[13G[0Ky=requi[90mre[39m[20G[0Kr[90me[39m[21G[0Ke [1G[0J> const query=require[22G('..
+const query=require('..
+                    ^^^
+
+Uncaught SyntaxError: Invalid or unexpected token
+[1G[0J> [3G[1G[0J> const query=require('..[26G\src\b[1G[0J> const query=require('..\src\[31Gdb\index');
+Uncaught SyntaxError: Identifier 'query' has already been declared
+[1G[0J> [3Gex[90mport[39m[5G[0Kit[1G[0J> exi[6G[1G[0J> ex[5G[90mport[39m[5G[90mport[39m[5G[0K[1G[0J> e[4G[1G[0J> [3G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0J> [3G
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnode[?1l>[?2004l
+]2;node]1;nodeWelcome to Node.js v18.12.0.
+Type ".help" for more information.
+[1G[0J> [3Gconst query=require('..\src\db\index');
+Uncaught Error: Cannot find module '..srcdbindex'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0J> [3G
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode   n  nnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+[0m[0m
+[0m  create artist[0m
+[0m    /artists[0m
+[0m      POST[0m
+      [31m  1) creates a new artist in the database[0m
+      [31m  2) "after each" hook for "creates a new artist in the database"[0m
+
+
+[92m [0m[32m 0 passing[0m[90m (60ms)[0m
+[31m  2 failing[0m
+
+[0m  1) create artist
+       /artists
+         POST
+           creates a new artist in the database:
+[0m[31m     AssertionError: expected undefined to equal 'Tame Impala'[0m[90m
+      at Context.<anonymous> (tests/artist-create.js:21:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0m
+[0m  2) "after each" hook for "creates a new artist in the database":
+[0m[31m     error: relation "artists" does not exist[0m[90m
+      at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[0m
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpde  n  nnpm start[?1l>[?2004l
+]2;npm start]1;npm
+> music-library@1.0.0 prestart
+> node scripts/create-database.js
+
+Creating music_library_dev database...
+Database already exists!
+
+> music-library@1.0.0 start
+> nodemon -r dotenv/config index.js
+
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node -r dotenv/config index.js index.js`[39m
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/taiwaicheung/Projects/music-library/index.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v18.12.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+clear
+^C
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker --version[?1l>[?2004l
+]2;docker --version]1;dockerDocker version 20.10.21, build baeda1f
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker ps[?1l>[?2004l
+]2;docker ps]1;dockerCONTAINER ID   IMAGE      COMMAND                  CREATED      STATUS      PORTS                    NAMES
+8291b6810781   postgres   "docker-entrypoint.s…"   2 days ago   Up 2 days   0.0.0.0:5432->5432/tcp   postgres
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode src/      n  lls src[?1l>[?2004l
+]2;ls -G src]1;lsapp.js      [1m[36mcontrollers[39;49m[0m [1m[36mdb[39;49m[0m          [1m[36mroutes[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccat src/s app[?1l>[?2004l
+]2;cat src/app]1;catcat: src/app: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccat src\appjs[?1l>[?2004l
+]2;cat src\appjs]1;catcat: srcappjs: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccat src/app.js[?1l>[?2004l
+]2;cat src/app.js]1;catconst express = require('express');
+const artistRouter = require('../src/routes/artist');
+
+const app = express();
+
+app.use(express.json());
+
+// app.post('/artists', (req, res) => {
+//   res.sendStatus(201);
+// });
+
+// app.use(artistRouter);
+app.use('/artists', artistRouter);
+
+module.exports = app;
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode src/app.js[?1l>[?2004l
+]2;node src/app.js]1;node[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode[?1l>[?2004l
+]2;node]1;nodeWelcome to Node.js v18.12.0.
+Type ".help" for more information.
+[1G[0J> [3Gconst express = require('express');
+[90mundefined[39m
+[1G[0J> [3Gconst artistRouter = require('../src/routes/artist');
+Uncaught Error: Cannot find module '../src/routes/artist'
+Require stack:
+- <repl>
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+[90m    at require (node:internal/modules/cjs/helpers:103:18)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [ [32m'<repl>'[39m ]
+}
+[1G[0J> [3G
+[1G[0J> [3Gconst app = express();
+[90mundefined[39m
+[1G[0J> [3G
+[1G[0J> [3Gapp.use(express.json());
+[36m<ref *1>[39m [Function: app] {
+  _events: [Object: null prototype] { mount: [36m[Function: onmount][39m },
+  _eventsCount: [33m1[39m,
+  _maxListeners: [90mundefined[39m,
+  setMaxListeners: [36m[Function: setMaxListeners][39m,
+  getMaxListeners: [36m[Function: getMaxListeners][39m,
+  emit: [36m[Function: emit][39m,
+  addListener: [36m[Function: addListener][39m,
+  on: [36m[Function: addListener][39m,
+  prependListener: [36m[Function: prependListener][39m,
+  once: [36m[Function: once][39m,
+  prependOnceListener: [36m[Function: prependOnceListener][39m,
+  removeListener: [36m[Function: removeListener][39m,
+  off: [36m[Function: removeListener][39m,
+  removeAllListeners: [36m[Function: removeAllListeners][39m,
+  listeners: [36m[Function: listeners][39m,
+  rawListeners: [36m[Function: rawListeners][39m,
+  listenerCount: [36m[Function: listenerCount][39m,
+  eventNames: [36m[Function: eventNames][39m,
+  init: [36m[Function: init][39m,
+  defaultConfiguration: [36m[Function: defaultConfiguration][39m,
+  lazyrouter: [36m[Function: lazyrouter][39m,
+  handle: [36m[Function: handle][39m,
+  use: [36m[Function: use][39m,
+  route: [36m[Function: route][39m,
+  engine: [36m[Function: engine][39m,
+  param: [36m[Function: param][39m,
+  set: [36m[Function: set][39m,
+  path: [36m[Function: path][39m,
+  enabled: [36m[Function: enabled][39m,
+  disabled: [36m[Function: disabled][39m,
+  enable: [36m[Function: enable][39m,
+  disable: [36m[Function: disable][39m,
+  acl: [36m[Function (anonymous)][39m,
+  bind: [36m[Function (anonymous)][39m,
+  checkout: [36m[Function (anonymous)][39m,
+  connect: [36m[Function (anonymous)][39m,
+  copy: [36m[Function (anonymous)][39m,
+  delete: [36m[Function (anonymous)][39m,
+  get: [36m[Function (anonymous)][39m,
+  head: [36m[Function (anonymous)][39m,
+  link: [36m[Function (anonymous)][39m,
+  lock: [36m[Function (anonymous)][39m,
+  [32m'm-search'[39m: [36m[Function (anonymous)][39m,
+  merge: [36m[Function (anonymous)][39m,
+  mkactivity: [36m[Function (anonymous)][39m,
+  mkcalendar: [36m[Function (anonymous)][39m,
+  mkcol: [36m[Function (anonymous)][39m,
+  move: [36m[Function (anonymous)][39m,
+  notify: [36m[Function (anonymous)][39m,
+  options: [36m[Function (anonymous)][39m,
+  patch: [36m[Function (anonymous)][39m,
+  post: [36m[Function (anonymous)][39m,
+  propfind: [36m[Function (anonymous)][39m,
+  proppatch: [36m[Function (anonymous)][39m,
+  purge: [36m[Function (anonymous)][39m,
+  put: [36m[Function (anonymous)][39m,
+  rebind: [36m[Function (anonymous)][39m,
+  report: [36m[Function (anonymous)][39m,
+  search: [36m[Function (anonymous)][39m,
+  source: [36m[Function (anonymous)][39m,
+  subscribe: [36m[Function (anonymous)][39m,
+  trace: [36m[Function (anonymous)][39m,
+  unbind: [36m[Function (anonymous)][39m,
+  unlink: [36m[Function (anonymous)][39m,
+  unlock: [36m[Function (anonymous)][39m,
+  unsubscribe: [36m[Function (anonymous)][39m,
+  all: [36m[Function: all][39m,
+  del: [36m[Function (anonymous)][39m,
+  render: [36m[Function: render][39m,
+  listen: [36m[Function: listen][39m,
+  request: IncomingMessage { app: [36m[Circular *1][39m },
+  response: ServerResponse { app: [36m[Circular *1][39m },
+  cache: {},
+  engines: {},
+  settings: {
+    [32m'x-powered-by'[39m: [33mtrue[39m,
+    etag: [32m'weak'[39m,
+    [32m'etag fn'[39m: [36m[Function: generateETag][39m,
+    env: [32m'development'[39m,
+    [32m'query parser'[39m: [32m'extended'[39m,
+    [32m'query parser fn'[39m: [36m[Function: parseExtendedQueryString][39m,
+    [32m'subdomain offset'[39m: [33m2[39m,
+    [32m'trust proxy'[39m: [33mfalse[39m,
+    [32m'trust proxy fn'[39m: [36m[Function: trustNone][39m,
+    view: [36m[Function: View][39m,
+    views: [32m'/Users/taiwaicheung/Projects/music-library/views'[39m,
+    [32m'jsonp callback name'[39m: [32m'callback'[39m
+  },
+  locals: [Object: null prototype] {
+    settings: {
+      [32m'x-powered-by'[39m: [33mtrue[39m,
+      etag: [32m'weak'[39m,
+      [32m'etag fn'[39m: [36m[Function: generateETag][39m,
+      env: [32m'development'[39m,
+      [32m'query parser'[39m: [32m'extended'[39m,
+      [32m'query parser fn'[39m: [36m[Function: parseExtendedQueryString][39m,
+      [32m'subdomain offset'[39m: [33m2[39m,
+      [32m'trust proxy'[39m: [33mfalse[39m,
+      [32m'trust proxy fn'[39m: [36m[Function: trustNone][39m,
+      view: [36m[Function: View][39m,
+      views: [32m'/Users/taiwaicheung/Projects/music-library/views'[39m,
+      [32m'jsonp callback name'[39m: [32m'callback'[39m
+    }
+  },
+  mountpath: [32m'/'[39m,
+  _router: [Function: router] {
+    params: {},
+    _params: [],
+    caseSensitive: [33mfalse[39m,
+    mergeParams: [90mundefined[39m,
+    strict: [33mfalse[39m,
+    stack: [ [36m[Layer][39m, [36m[Layer][39m, [36m[Layer][39m ]
+  }
+}
+[1G[0J> [3Gapp.use('/artists', artistRouter);
+Uncaught ReferenceError: artistRouter is not defined
+[1G[0J> [3Gnod[1G[0J> no[5G[1G[0J> n[4G[1G[0J> [3G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0J> [3G
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[H[2J[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode app.js[?1l>[?2004l
+]2;node app.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/taiwaicheung/Projects/music-library/app.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm app.js       n  nnode app.js[?1l>[?2004l
+]2;node app.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/taiwaicheung/Projects/music-library/app.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+/Users/taiwaicheung/Projects/music-library/src/controllers/artist.js:7
+    await db.query(SQL);
+    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/routes/artist.js:2:28)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/app.js:2:22)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/tests/artist-create.js:4:13)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:169:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:530:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:438:15)
+    at async formattedImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async exports.requireOrImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async exports.loadFilesAsync (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async exports.handler (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run.js:370:5)
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+[0m[0m
+[0m  create artist[0m
+[0m    /artists[0m
+[0m      POST[0m
+      [31m  1) creates a new artist in the database[0m
+      [31m  2) "after each" hook for "creates a new artist in the database"[0m
+
+
+[92m [0m[32m 0 passing[0m[90m (63ms)[0m
+[31m  2 failing[0m
+
+[0m  1) create artist
+       /artists
+         POST
+           creates a new artist in the database:
+[0m[31m     AssertionError: expected undefined to equal 'Tame Impala'[0m[90m
+      at Context.<anonymous> (tests/artist-create.js:21:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0m
+[0m  2) "after each" hook for "creates a new artist in the database":
+[0m[31m     error: relation "artists" does not exist[0m[90m
+      at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[0m
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpc[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+[0m[0m
+[0m  create artist[0m
+[0m    /artists[0m
+[0m      POST[0m
+      [31m  1) creates a new artist in the database[0m
+      [31m  2) "after each" hook for "creates a new artist in the database"[0m
+
+
+[92m [0m[32m 0 passing[0m[90m (60ms)[0m
+[31m  2 failing[0m
+
+[0m  1) create artist
+       /artists
+         POST
+           creates a new artist in the database:
+[0m[31m     AssertionError: expected undefined to equal 'Tame Impala'[0m[90m
+      at Context.<anonymous> (tests/artist-create.js:21:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0m
+[0m  2) "after each" hook for "creates a new artist in the database":
+[0m[31m     error: relation "artists" does not exist[0m[90m
+      at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[0m
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm test artist-insert.js[?1l>[?2004l
+]2;npm test artist-insert.js]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js artist-insert.js
+
+[33mWarning: Cannot find any files matching pattern "artist-insert.js"[39m
+
+/Users/taiwaicheung/Projects/music-library/src/controllers/artist.js:7
+    await db.query(SQL);
+    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/routes/artist.js:2:28)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/app.js:2:22)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/tests/artist-create.js:4:13)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:169:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:530:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:438:15)
+    at async formattedImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async exports.requireOrImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async exports.loadFilesAsync (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async exports.handler (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run.js:370:5)
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnpm test artist-insert.js                [?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+/Users/taiwaicheung/Projects/music-library/src/controllers/artist.js:7
+    await db.query(SQL);
+    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/routes/artist.js:2:28)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/src/app.js:2:22)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/taiwaicheung/Projects/music-library/tests/artist-create.js:4:13)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:169:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:530:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:438:15)
+    at async formattedImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async exports.requireOrImport (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async exports.loadFilesAsync (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async exports.handler (/Users/taiwaicheung/Projects/music-library/node_modules/mocha/lib/cli/run.js:370:5)
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+[0m[0m
+[0m  create artist[0m
+[0m    /artists[0m
+[0m      POST[0m
+      [31m  1) creates a new artist in the database[0m
+      [31m  2) "after each" hook for "creates a new artist in the database"[0m
+
+
+[92m [0m[32m 0 passing[0m[90m (58ms)[0m
+[31m  2 failing[0m
+
+[0m  1) create artist
+       /artists
+         POST
+           creates a new artist in the database:
+[0m[31m     AssertionError: expected undefined to equal 'Tame Impala'[0m[90m
+      at Context.<anonymous> (tests/artist-create.js:21:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0m
+[0m  2) "after each" hook for "creates a new artist in the database":
+[0m[31m     error: relation "artists" does not exist[0m[90m
+      at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[0m
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnpm test[?1l>[?2004l
+]2;npm test]1;npm
+> music-library@1.0.0 pretest
+> node scripts/create-database.js test
+
+Creating music_library_api_test database...
+Database already exists!
+
+> music-library@1.0.0 test
+> mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js
+
+
+[0m[0m
+[0m  create artist[0m
+[0m    /artists[0m
+[0m      POST[0m
+      [32m  [32m✔[39m[0m[90m creates a new artist in the database[0m
+      [31m  1) "after each" hook for "creates a new artist in the database"[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (57ms)[0m
+[31m  1 failing[0m
+
+[0m  1) "after each" hook for "creates a new artist in the database":
+[0m[31m     error: relation "artists" does not exist[0m[90m
+      at Parser.parseErrorMessage (node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+[0m
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnpm install pg[?1l>[?2004l
+]2;npm install pg]1;npm[?25l([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:music-library: [7msill[0m [35midealTree[0m buildDeps[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 1607ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 1607ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 1607ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 1607ms[0m[K[K[?25h
+up to date, audited 328 packages in 2s
+
+86 packages are looking for funding
+  run `npm fund` for details
+
+found [32m[1m0[22m[39m vulnerabilities
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddocker run heello    lloe -work ld[?1l>[?2004l
+]2;docker run hello-world]1;docker
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (arm64v8)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode index.js[?1l>[?2004l
+]2;node index.js]1;nodenode:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/taiwaicheung/Projects/music-library/index.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:841:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v18.12.0
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;31m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h....  lls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hssrc[?1l>[?2004l
+]2;src]1;src[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src]2;taiwaicheung@TAIs-MacBook-Air]1;..c-library/src]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsapp.js      [1m[36mcontrollers[39;49m[0m [1m[36mdb[39;49m[0m          [1m[36mroutes[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src]2;taiwaicheung@TAIs-MacBook-Air]1;..c-library/src]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md         [1m[36mnode_modules[39;49m[0m      package.json      [1m[36msrc[39;49m[0m               typescript
+[1m[36mmigrations[39;49m[0m        package-lock.json [1m[36mscripts[39;49m[0m           [1m[36mtests[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library]2;taiwaicheung@TAIs-MacBook-Air]1;..music-library]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library[0m[27m[24m[J[01;32m➜  [36mmusic-library[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hssrc[?1l>[?2004l
+]2;src]1;src[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src]2;taiwaicheung@TAIs-MacBook-Air]1;..c-library/src]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hddb[?1l>[?2004l
+]2;db]1;db[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db]2;taiwaicheung@TAIs-MacBook-Air]1;..ibrary/src/db]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db[0m[27m[24m[J[01;32m➜  [36mdb[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsindex.js
+[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db]2;taiwaicheung@TAIs-MacBook-Air]1;..ibrary/src/db]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db[0m[27m[24m[J[01;32m➜  [36mdb[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnode index[?1l>[?2004l
+]2;node index]1;node[1m[7m%[27m[1m[0m                                                                                                        ]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db]2;taiwaicheung@TAIs-MacBook-Air]1;..ibrary/src/db]7;file://TAIs-MacBook-Air.local/Users/taiwaicheung/projects/music-library/src/db[0m[27m[24m[J[01;32m➜  [36mdb[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Saving session...completed.
+Deleting expired sessions...none found.
+
+Script done on Sun Jan 15 17:50:08 2023
